@@ -1,4 +1,8 @@
 # Funciones avanzadas
+
++ [Recursivas](#recursiva)
++ [Callback](#callback)
+
 ---
 
 Existen dos formas de pasar parametros a las funciones.
@@ -40,7 +44,7 @@ Generalmente cuando son datos complejos no primitivos como (Objecto, arrays o fu
 Si se quiere profundizar mas sobre funciones avanzadas este [enlace](https://medium.com/laboratoria-developers/por-valor-vs-por-referencia-en-javascript-de3daf53a8b9) tiene todo mas detallado. 
 
 ---
-## Funcion recursiva.
+## Recursiva
 
 Es una funcion que devuelve un valor y se invoca a si misma.
 
@@ -55,7 +59,7 @@ Hay que tener cuidado con las iteraciones infiinitas.
 
     recursive(5)
 
-## Call back
+## Callback
 
 Es asignar el nombre de una funcion a una variable. 
 
