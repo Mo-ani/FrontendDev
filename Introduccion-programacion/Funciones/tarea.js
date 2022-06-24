@@ -1,3 +1,6 @@
+
+
+
 /*
 Primera parte:
 Crear una función con tres parámetros que sean números que se suman entre sí.
@@ -8,10 +11,7 @@ function suma(p1,p2,p3){
     console.log(p1+p2+p3);
 }
 
-const main = function(){
-return suma(1,4,3);
-}
-main()
+
 
 /*
 Crear una clase coche.
@@ -33,9 +33,17 @@ class Coche{
     }
 }
 
-let miCoche = new Coche(1);
+//MAIN
+const main = function(){
+    const resultado = suma(1,4,3);
 
-miCoche.incrementar()//'Este coche esta aumenta sus puertas a 4'
-miCoche.incrementar()//'Este coche esta aumenta sus puertas a 5'
-miCoche.incrementar()//'Este coche esta aumenta sus puertas a 6'
-miCoche.incrementar()//'Este coche esta aumenta sus puertas a 7'
+    let miCoche = new Coche(1);
+    
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 4'
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 5'
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 6'
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 7'
+
+    return resultado;
+}
+main()
