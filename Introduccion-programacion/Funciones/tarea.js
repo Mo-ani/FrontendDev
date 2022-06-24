@@ -5,12 +5,11 @@ Llamar a la función en el main y darle valores.
 */
 
 function suma(p1,p2,p3){
-    console.log(p1+p2+p3);
+    return p1+p2+p3;
 }
 
 /*
 Crear una clase coche.
-
 Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
 Una función que incremente el número de puertas que tiene el coche.
 Crear un objeto miCoche en el main y añadirle una puerta.
@@ -37,6 +36,6 @@ const main = function(){
     miCoche.incrementar()//'Este coche esta aumenta sus puertas a 3'
     console.log(miCoche.incrementar())//'Este coche esta aumenta sus puertas a 7'
 
-    return resultado;
+    console.log(`El resultado de la suma de numeros es ${resultado}`)
 }
 main()
