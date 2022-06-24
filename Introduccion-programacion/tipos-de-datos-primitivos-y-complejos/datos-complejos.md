@@ -26,7 +26,7 @@ Se utilizan en algunos lenguajes de programcion, suele ser similar a un array, l
 ---
 ## Array asosiativo
 
-Van entre corchetes, son similares a los objetos en Javascript, que se componen de Llave y valor. Tambien suelen llamarse mapas.
+Van entre corchetes, son similares a los objetos en Javascript, que se componen de Llave y valor. Tambien suelen llamarse mapas. 
 
     ArrayCapitalesPais [
         'Ucrania' => 'Kyiv'
@@ -35,5 +35,19 @@ Van entre corchetes, son similares a los objetos en Javascript, que se componen 
 ---
 ## Objetos 
 
+Suelen utilizarse demasiado en proyectos de javascript.
+
+en logica del programa intenta representar un ente del mundo real, tiene propiedades que lo caracterizan, tambien tienen metodos, que lo que hacen es modificar las propiedades del objeto. 
+
+Suele tener una key y un value
+
+    const objeto = {
+        color : 'negro',
+        tamaño : 'azul',
+        utilidad : true
+        cambiarColor : function(color){
+            this.color = color;
+        }
+    }
 
 
