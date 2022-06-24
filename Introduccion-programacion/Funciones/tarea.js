@@ -30,13 +30,12 @@ class Coche{
 //MAIN
 const main = function(){
     const resultado = suma(1,4,3);
-
     let miCoche = new Coche(1);
 
-    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 4'
-    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 5'
-    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 6'
-    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 7'
+    console.log(miCoche.incrementar())//'Este coche esta aumenta sus puertas a 1'
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 2'
+    miCoche.incrementar()//'Este coche esta aumenta sus puertas a 3'
+    console.log(miCoche.incrementar())//'Este coche esta aumenta sus puertas a 7'
 
     return resultado;
 }
