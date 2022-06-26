@@ -64,5 +64,5 @@ Ejemplo pseudocodigo
 
 Vamos a tener un metodo normal y otro abstracto con el fin de usarlo en diferentes escenarios. 
 
-Tendremos funciones ya implementadas y con el abstract vamos a tener una parte de el metodo implementado, el resto lo programamos nosotros. 
+Tendremos funciones ya implementadas y con el abstract vamos a tener una parte implementado, el resto lo programamos nosotros. 
     
