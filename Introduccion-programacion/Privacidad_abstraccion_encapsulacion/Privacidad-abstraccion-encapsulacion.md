@@ -48,7 +48,7 @@ Y multihilo, que podra ejecutar varios procesos al mismo tiempo. \
 
 Una clase abstracta es similar a una clase comun y corriente, pero en los metodos abstractos, puede decirnos que la tenga que implementar una clase hija. 
 
-Claramente si tenemos una clase auto, con un metodo sonido que hace que suene, el sonido de un carro no sera igual que el sonido de una moto. Con este ejemplo ilustrado, vemos que el metodo abstracto se adapta a determinardas clases dependiendo de la propiedad
+Claramente si tenemos una clase Coche, con un metodo sonido que hace que suene, el sonido de un carro no sera igual que el sonido de una moto. Con este ejemplo ilustrado, vemos que el metodo abstracto se adapta a determinardas clases dependiendo de la propiedad
 
 Ejemplo pseudocodigo 
 
@@ -64,5 +64,5 @@ Ejemplo pseudocodigo
 
 Vamos a tener un metodo normal y otro abstracto con el fin de usarlo en diferentes escenarios. 
 
-Tendremos funciones ya implementadas y con el abstract vamos a tener una parte de el metodo implementado y con el metodo abstracto vamos tener un prototipo. 
+Tendremos funciones ya implementadas y con el abstract vamos a tener una parte de el metodo implementado.
     
