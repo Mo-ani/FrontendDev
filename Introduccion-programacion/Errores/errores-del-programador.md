@@ -1,5 +1,11 @@
 # Errores del programador
 
+
++ [Guia](#guia-de-estilo)
++ [Seguridad](#copia-de-seguridad)
++ [Eficiencia](#eficiencia)
++ [Console.log](#consolelog)
++ [Funciones](#funciones)
 ---
 
 ### Guia de estilo
