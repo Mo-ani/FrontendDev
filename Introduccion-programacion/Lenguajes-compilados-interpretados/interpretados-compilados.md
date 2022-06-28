@@ -1,5 +1,17 @@
 # Lenguajes compilados e interpretados
 
+
++ [Compilador](#compilador)
+    + [Analizador-lexico](#analizador-lexico)
+    + [Analizador-sintactico](#analisis-sintactico)
+    + [Generacion-de-codigo-intermedio](#generacion-de-codigo-intermedio)
+    + [Optimizacion-codigo](#optimización-de-código)
+    + [Generacion-de-codigo](#generacion-de-codigo)
++ [Interprete](#interpretados)
++ [Diferencias](#diferencias)
++ [Lenguajes-bajo-nivel](#lenguajes-de-bajo-nivel)
++ [Lenguajes-alto-nivel](#lenguaje-de-alto-nivel)
+
 ---
 
 Con esto podremos saber como funcionan nuestro lenguaje por detras
@@ -46,19 +58,19 @@ No son ejecutados por el procesador, se ejecuta atraves de una maquina virtual o
 
 ## Diferencias
 
-Un intérprete traduce instrucciones de alto nivel en una forma intermedia para ser ejecutado. En contraste, un compilador, traduce instrucciones de alto nivel directamente en lenguaje de máquina.
++ Un intérprete traduce instrucciones de alto nivel en una forma intermedia para ser ejecutado. En contraste, un compilador, traduce instrucciones de alto nivel directamente en lenguaje de máquina.
 
-El intérprete traduce un programa línea a línea mientras que el compilador traduce el programa entero y luego lo ejecuta.
++ El intérprete traduce un programa línea a línea mientras que el compilador traduce el programa entero y luego lo ejecuta.
 
-El intérprete detecta si el programa tiene errores y permite su depuración durante el proceso de ejecución, mientras que el compilador espera hasta terminar la compilación de todo el programa para generar un informe de errores.
++ El intérprete detecta si el programa tiene errores y permite su depuración durante el proceso de ejecución, mientras que el compilador espera hasta terminar la compilación de todo el programa para generar un informe de errores.
 
-Un programa compilado es más seguro que uno interpretado, porque no contiene el código fuente, que puede ser modificado incorrectamente por el usuario
++ Un programa compilado es más seguro que uno interpretado, porque no contiene el código fuente, que puede ser modificado incorrectamente por el usuario
 
-Un leguaje compilado se ejecuta en el procesador y el interpretado necesida de un programa adicional denominado interprete, por eso los lenguajes compilados son mas rapidos y el interpretado es mas sencillo de depurar. 
++ Un leguaje compilado se ejecuta en el procesador y el interpretado necesida de un programa adicional denominado interprete, por eso los lenguajes compilados son mas rapidos y el interpretado es mas sencillo de depurar. 
 
-Un programa interpretado es mas portable y se puede reproducir en cualquier sistema operativo, con el compilador por cada sistema operativo. 
++ Un programa interpretado es mas portable y se puede reproducir en cualquier sistema operativo, con el compilador por cada sistema operativo. 
 
-JavaScript es un lenguaje interpretado para navegadores. 
++ JavaScript es un lenguaje interpretado para navegadores. 
 
 
 ## Lenguajes de bajo nivel
