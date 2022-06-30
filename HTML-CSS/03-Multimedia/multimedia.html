@@ -6,18 +6,37 @@
     <body>
         <h3>Imágenes</h3>
         <img src="imagenes/logohtml.webp" alt="Logo HTML5" width="300" height="300" />
-        <img src="https://img.freepik.com/vector-gratis/logotipo-sport-motorcicly_25327-58.jpg?size=338&ext=jpg" alt="Logo moto" width="300" height="300" />
+        <img src="https://img.freepik.com/vector-gratis/logotipo-sport-motorcicly_25327-58.jpg?size=338&ext=jpg" alt="Logo moto" width="300"/>
 
         <h3>Vídeo</h3>
         <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs -->
-        <video width="300" height="300" controls muted loop>
+        <video width="300" height="300" muted autoplay loop>
             <source src="Intro.mp4" type="video/mp4" />
         </video>
 
         <h3>Audio</h3>
         <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs -->
-        <audio controls autoplay loop>
+        <audio autoplay controls loop>
             <source src="gnr-welcome.mp3" type="audio/mp3" />
         </audio>
     </body>
 </html>
+
+
+<!--como primera etiqueta tenemos el img ;que nos permite mostrar imagenes en html, su atributo src que nos dice en donde esta la imagen, el alt fucniona para agregar text alternativo y width and height nos dice que tamaño vamos a usar con la imagen-->
+
+<!--Una buena practica es tener una carpeta que contenga las imagenes-->
+
+
+<!--Video y audio-->
+<!--Se usa la etiqueta <video> para soportar videos en html5, solo soporta webn, MP4, ogg, tenemos los atributos de tamaño width y height, controles con controls, muted para que reproduzca sin sonido, loop que se reproduce varias veces y autoplay para que se reproduzca el video inmediatamente-->
+
+<!--dentro de la etiqueta video, tenemos una etiqueta source que nos dice donde esta el video, sus atributos src para el lugar y type que nos indica que tipo es, en el caso del video VIDEO-->
+
+<!--Audio-->
+<!--Los codecs de audio soportados por html5 son mp3,wav,ogg usamos la etiqueta <audio> tenemos los atributos similares a video, controls, loop, autoplay, mute-->
+
+<!--Usamos de igual forma la etiqueta <source> que nos indica donde se encuentra el audio-->
+
+<!--Fuentes externas-->
+<!--Nos podemos alimentar de fuentes externas pegando el link de la imagen que deseo usar directamente en src-->
