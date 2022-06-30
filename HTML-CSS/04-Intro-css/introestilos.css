@@ -4,7 +4,7 @@
 }
 
 .color-hexadecimal {
-    color: #BCE784;
+    color: #bce784;
 }
 
 .color-rgb {
@@ -19,19 +19,21 @@
 .fondo {
     /* background-color: cornflowerblue; */
     background-image: url("https://d33wubrfki0l68.cloudfront.net/89a052ddc6d368ce93d9067e8444c36a3558efe7/f9e10/static/triangle_background2-6eded4a7ad80c007fb65f02c828e5dd0.jpg");
-    background-position: left bottom;
+    background-position: bottom left;
+    background-size: cover;
 }
 
 .fondo-interno {
     /* background-color: cornflowerblue; */
     background-image: url("imagenes/fondo.jpg");
     background-position: left bottom;
+    background-size: cover;
 }
 
 /* Tamaños */
 .ancho {
     background-color: #BCE784;
-    width: 100px;
+    width: 284px;
 }
 
 .alto {
@@ -49,3 +51,25 @@
     margin: 10px 20px;
     /* margin: 10px 20px 30px 40px; */
 }
+
+
+
+/*Colores*/
+/*La diferencia en tre rgb y color rgba es que el ultimo otorga transparencia */
+
+/*Fondos*/
+/*Se usa background para agregar un color de fondo o una imagen de fondo. Generalmente nos coge la esquina superior izquierda y nos muestra de ahi para abajo, para personalizarlo podemos usar background-position: center o left buttom*/
+/*A los div se le pueden agregar colores para personalizarlos o para identificar donde esta mi codigo*/
+
+/*tamaños*/
+/*Generalmente se usan para los contenedores div*/
+/*Para el ancho se utiliza el width y el height para el alto*/
+/*Trabajar con pixeles no es buena practica con respecto a lo responsive*/
+
+/*Padding*/
+/*El espacio interno que tenemos en la caja o contender con respecto del contenido se usa la propiedad padding, el padding lo podemos visualizar mejor con las herramientas de desarrollador*/
+/*Cuando utilizamos un padding generico o culquier etiqueta que nos configure los 4 lados, siempre recordar que apuntan hacia las agujas del reloj*/
+
+/*Maring*/
+/*El margen es el espacio externo del borde del contenedor a los elementos del dom*/
+/*Si solo colocamos dos valores el primero toma los de forma vertical y el segundo de forma horizontal*/

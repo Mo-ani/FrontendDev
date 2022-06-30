@@ -1,0 +1,8 @@
+.unorderList ul #elemento-1{
+    color: red;
+    font-size: 2rem;
+}
+
+.orderlist ol #elemento-1{
+    color:red
+}

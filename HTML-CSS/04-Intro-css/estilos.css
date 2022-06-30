@@ -1,11 +1,11 @@
 h1 {
-    color: red;
+    color: #FF9C00;  /*Esto hara referencia a todos los estilos h1*/
 }
 
 /* Estoy probando colores y fuentes */
 p {
-    color: blue;
-    font-size: 16pt;
+    color: #555E7B;
+    font-size: 25px;
 }
 
 #primera-noticia {
@@ -28,5 +28,20 @@ p {
 }
 
 .autor, .fecha, .ubicacion, h1, #segunda-noticia {
-    text-decoration: underline;
+    text-decoration: underline;  
 }
+
+/*Los estilos los podemos estudiar en herramientas del desarrollador elemento por elemento, desde alli se pueden probar tamaños de parrafos o elementos para ver en directo como afecta.*/
+
+/*En css usamos key/value con propiedades y al lado el valor que quiero modificar esa propiedad*/
+
+/*Selectores*/
+/*Se crean para no afectar toda las etiquetas si no ser mas especificos al momento de seleccionar. Hay dos opciones #id .class*/
+/*Vemos que los selectores sobreescriben a las etiquetas*/
+/*Si queremos mas especifidad podemos colocar la etiqueta y luego la clase, quiere decir tosas las etiquetas que tengan la clase tal*/
+
+/*Selector universal*/
+/*con este signo * le estamos diciendo a css que queremos aplicar estos estilos a todos los elementos */
+
+/*selectores multiples*/
+/*Podemos usar la coma para dar estilos a varias clases, etiquetas y id, simplemente los separamos por coma.*/

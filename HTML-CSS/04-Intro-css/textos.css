@@ -5,5 +5,12 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: larger;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
+
+/*Cuando trabajamos con textos podemo trabajar con tamaño del texto con el grosor y el tipo de marcado. Una gran herramienta es utilizar la herramienta de desarrolladores de google.*/
+
+/*Tenemos una herramienta indispensable que es google fonts, donde podremos escoger las fuetnes disponibles e importarla directamente en nuestro proyecto usando un link pegado a nuestro archivo en css, por medio la @import url(), antes de seleccionar la fuente que nos llame la atencion, es muy importante tener en cuenta que fuentes voy a utilizar, tamaños y demas. Siempre debemos tener cuidado al momento de agregar fuetnes ya que se nos puede realentizar la pagina web.*/
+
+
+/*Es mas recomendable utilizar el link para importar las fuentes directamente desde la hoja de estilo css*/

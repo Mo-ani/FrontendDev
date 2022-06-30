@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Utilidades CSS</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="estilos.css" /> <!--Hoja de estilos interna-->
     <link
       rel="stylesheet"
       href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
-    />
+    /> <!--Con esto importamos estilos de una pagina https-->
     <style>
       html {
           padding: 15px;
@@ -17,11 +17,13 @@
       p {
         color: red;
       }
-    </style>
+    </style><!--Aqui encontramos otra forma de insertar estilos en el cuerpo del body-->
   </head>
   <body>
     <p>Hola</p>
-    <button class="pure-button">Esto es un botón</button>
-    <button style="padding: 10px; border: none; border-radius: 10px;">Botón personalizado</button>
+    <button class="pure-button">Esto es un botón</button> /*Aunque no hayamos definido este estilo la pagina pure css nos otorga un boton por defecto*/
+    <button style="padding: 10px; border: none; border-radius: 10px;">Botón personalizado</button><!--Tambien podemos seleccionar desde el mismo documento html, se llaman estilos inline dentor de la etiqueta-->
   </body>
 </html>
+
+<!--La mejor forma de trabajar es por medio de la hoja de estilos, en ocasiones tendremos la necesidad de aplicar uno o otro dependiendo. -->
