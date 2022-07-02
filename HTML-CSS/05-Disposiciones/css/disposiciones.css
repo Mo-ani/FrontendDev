@@ -8,14 +8,14 @@
     background-color: aquamarine;
     /* display      : inline; POR DEFECTO - span tienen display inline */
     /* height       : 500px; */
-    float: right;
+    float: left;
 }
 
 .span-2 {
     background-color: aquamarine;
     /* display      : inline; POR DEFECTO - span tienen display inline */
     /* height       : 500px; */
-    float           : left;
+    float           : right;
 }
 
 .img {

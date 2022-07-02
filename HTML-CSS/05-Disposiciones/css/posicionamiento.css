@@ -5,14 +5,14 @@ div {
     background-color: white;
 }
 
-/* Posicionamiento relativo - se posiciona en relación al posicionamiento original */
+/* Posicionamiento relativo - se posiciona en relación al posicionamiento original o a la caja padre, se usa para conectar cajas absolutas*/
 .relative {
     position: relative;
-    left: 80px;
+    right: 80px; 
     margin-left: 10px;
 }
 
-/* Posicionamiento fijo - se posiciona en relación a la pantalla */
+/* Posicionamiento fijo - se posiciona en relación a la pantalla, se relaciona con una referencia como ancla */
 .fixed {
     position: fixed;
     bottom: 0px;
@@ -21,20 +21,21 @@ div {
     z-index: 10;
 }
 
-/* Posicionamiento absoluto */
+/* Posicionamiento absoluto, se ajusta en funcion del padre relativo. */
 .absolute {
     position: absolute;
-    bottom: 30px;
+    top: 30px;
     right: 0px;
 }
 
 .relative.contenedor {
     width: 300px;
-    height: 400px;
+    height: 1000px;
     background-color: blue;
+    float: right;
 }
 
-/* Posicionamiento "pegajoso" - Al hacer scroll modifica su posicionamiento relative->fixed */
+/* Posicionamiento "pegajoso" - Al hacer scroll modifica su posicionamiento relative->fixed se tiene que ajustar un top para saber que posicion tiene relativamente*/
 .sticky {
     position: -webkit-sticky; /* Safari */
     position: sticky; /* IE ni Safari soporta sticky */

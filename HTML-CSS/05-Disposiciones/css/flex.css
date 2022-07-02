@@ -2,12 +2,12 @@
 
 .flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Con esto ajusto el eje principal*/
     background-color: yellow;
     height: 300px;
-    justify-content: space-around;
-    align-items: flex-end;
-    /* flex-wrap: wrap; */
+    justify-content: ; /*Nos permite ajustar elementos dependiendo del eje principal flex direction*/
+    align-items: center; /*Dimenssiona a la posicion del eje principal que es flex direction*/
+    /* flex-wrap: wrap; con esta propiedad no redimensionamos y los elemenots quedan con el tamaño original*/ 
 }
 
 .contenido-1 {

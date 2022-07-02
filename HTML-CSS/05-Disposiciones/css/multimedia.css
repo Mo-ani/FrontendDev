@@ -2,19 +2,26 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    background-color: black;
+}
+.contenedorimg{
+    overflow: hidden;
+}
 .imagen-principal {
     width: 100vw;
-    opacity: 0.3;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .imagen-principal:hover {
-    opacity: 1;
+    opacity: .5;
+    transform: scale(2);
 }
 
 .galeria {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Nos permite controlar la direccion de los elementos en este caso que fluya con el tamaño*/
     gap: 10px;
 }
 

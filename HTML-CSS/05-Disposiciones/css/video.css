@@ -5,13 +5,14 @@
 
 html {
     font-family: Helvetica;
+    font-size: 30px;
     color: white;
 }
 
 .video {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit:cover;
     position: fixed;
 }
 
