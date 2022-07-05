@@ -7,17 +7,16 @@
 div {
     background-color: blue;
 }
-
 span.frase {
     font-style: italic;
 }
 
 span.frase::before {
-    content: '<< ';
+    content: '<< ';       /*Agrega contenido antes del selector, pero se debe usar content.*/
     font-size: xx-small;
 }
 span.frase::after {
-    content: ' >>';
+    content: ' >>';      /*Funciona similar a before pero este seria despues.*/
     font-size: xx-small;
 }
 
@@ -27,19 +26,25 @@ span.frase::after {
     font-family: Arial;
 }
 
-.libro p::first-letter {
-    font-size: xx-large;
+.libro p:first-child::first-letter {
+    font-size: xx-large; /*Escoge la primera letra y la modifica, en este caso la hace mas grande*/ 
 }
 
 .libro p::first-line {
-    color: white;
+    color: black; /*Escoge la primera linea del parrafo y la pinta en este caso de negro*/
 }
 
 .libro p::selection {
     background-color: chocolate;
-    color: lime;
+    color: lime;   /*Es el color de la seleccion de algun texto dentro de nuestro parrafo*/
 }
 
 .listado li::marker {
-    color: red;
+    color: rgb(166, 255, 0);  /*Selecciona los identificadores de una listo como el numero o el punto*/
 }
+
+
+/*Se usa de manera similar a las pseduo clases, con estos se accede con dos puntos y por lo general lo que hacen es agregar contenido adicion a el selector o modificar el estilo.
+
+Podemos combinarlos para poder agregar mas precision o para usarlo para algo.
+*/

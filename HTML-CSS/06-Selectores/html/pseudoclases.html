@@ -23,25 +23,28 @@
           background-color: aquamarine;
       }
 
-      .listado p:first-child {
+      .listado p:first-child { /*Escoge el primer elemento, en este caso escogemos todos los p que sean el primer elemento dentor de la clase listado */
           color: white;
       }
-
+      a{
+        text-decoration: none;
+      }
       a:link { /* Link no visitado todavía */
-          color: deeppink;
+          color: rgb(0, 153, 255);
       }
 
       a:visited {
-          color: crimson;
+          color: rgb(0, 0, 0);
       }
 
       a:hover {
-          color: pink;
+          color: rgb(155, 100, 109);
       }
 
       a:active {
           color: greenyellow;
       }
+      /*Es importante que si quiero modificar los enlaces, se hagan en este orden para no afectar nada*/
     </style>
   </head>
   <body>
@@ -59,6 +62,11 @@
     <div class="enlaces">
         <a href="http://google.com" target="_blank">Enlace a Google</a>
         <a href="http://marca.com" target="_blank">Enlace a Marca</a>
+        <a href="http://google.com" target="_blank">Enlace a Google</a>
     </div>
   </body>
 </html>
+
+
+<!-- Se representan solo como un grupo de dos puntos. Esta palabra clave se añade acaulquier selector y se activan cuando hay un estado especial en el elemento. -->
+

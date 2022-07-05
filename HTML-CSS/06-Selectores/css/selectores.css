@@ -1,5 +1,5 @@
 .p-contenedor {
-    color: green;
+    color: rgb(236, 122, 69); 
 }
 
 body section.main .contenedor p {
@@ -9,3 +9,6 @@ body section.main .contenedor p {
 .contenedor #boton-contenedor {
     background-color: yellow;
 }
+
+/*Anidar consiste en seleccionar elementos que estan dentro de otros, asi podremos ganar especifidad o precisión*/
+

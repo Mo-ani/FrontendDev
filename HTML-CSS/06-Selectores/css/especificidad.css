@@ -1,10 +1,13 @@
-/* (1, 0, 0) */
-/* (0, 1, 0) */
-/* (0, 0, 1) */
-/* (0, 0, 0) */
+
+/*La especifidad se identifica con numero de 1,0,0*/
+/* (1, 0, 0) 1*/
+/* (0, 1, 0) 2*/
+/* (0, 0, 1) 3*/
+/* (0, 0, 0) 4*/ 
+/*Esta seria la importancia de cada linea*/
 
 h1#h1-id.h1-clase {
-    color: darksalmon;
+    color: darksalmon; /*especifidad personalizada (1,1,1)*/ 
 }
 
 .h1-clase {
@@ -13,9 +16,17 @@ h1#h1-id.h1-clase {
 
 h1 {
     color: blue !important;
-    /* EVITAR en la medida de lo posible el !important */
+    /* EVITAR en la medida de lo posible el !important, este es el mas importante de todos los demas */
 }
-
+p#p-id.p-clase{
+    color: black; /*Para agregar mas especifidad se escribe todo pegado, el selector, el id y la clase(Sin espacios.)*/
+}
 p {
     color: red;
 }
+
+/*Nos hasbla de que tan importante es una propiedad sobre otra.*/
+
+/*Css aplica los estilos de abajo a arriba, siendo mas importantes las que se aplican despues.*/
+
+

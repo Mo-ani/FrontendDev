@@ -1,0 +1,27 @@
+.boton{
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: purple;
+}
+.boton:hover {
+    background-color: #5c9f62;
+    color: white;
+}
+
+.texto::before{
+    content: 'Pasa por encima';
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 700;
+    border: 1px solid;
+}
+
+.texto:hover::before{
+    content: '¡Hecho!';
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 700;
+}
+
