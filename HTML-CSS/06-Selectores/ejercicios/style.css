@@ -1,3 +1,9 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} /*Con esto podemos centrar elementos en el body o cualquier contenedor*/
 .boton{
     width: 300px;
     height: 100px;
@@ -10,15 +16,15 @@
     color: white;
 }
 
-.texto::before{
+.boton::before{
     content: 'Pasa por encima';
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
     font-weight: 700;
-    border: 1px solid;
+    
 }
 
-.texto:hover::before{
+.boton:hover::before{
     content: '¡Hecho!';
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
