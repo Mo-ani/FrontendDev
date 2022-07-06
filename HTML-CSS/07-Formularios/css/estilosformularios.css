@@ -1,19 +1,21 @@
 .input {
-    width: 100%;
+    width: 80vw;
     padding: 5px 10px;
-    border: 2px solid green;
+    border: 1px solid green;
     border-radius: 10px;
     margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; /*Tambien podemos agregar fuentes para lo que escriben en el input*/
+    color:red;
 }
 
-.input[type="password"] {
+.input[type="password"] { /*Con esto seleccionamos el input de tipo password, los corchetes en css podemos seleccionar por atributos, en este caso type. */
     color: red;
 }
 
 .input-moderno {
     border: none;
     border-bottom: 1px solid #c2c2c2;
-    outline: none;
+    outline: none; /*Con esto quitamos el outline de focus del input*/
     padding: 5px;
     color: #5f5f5f;
 }
@@ -22,7 +24,7 @@
     color: #c2c2c2;
 }
 
-.input-moderno:focus {
+.input-moderno:focus {  /*Con esta pseudo clase lo que hacemos es que cuando estoy con el enfoque dentro del elemento puedo trabajar como se veria*/
     border-bottom: 1px solid #5f5f5f;
 }
 
@@ -36,22 +38,25 @@
     box-shadow: 0 0 10px #ccc;
 }
 
-.input-background::placeholder {
+.input-background::placeholder { /*Con esto podemos modificar el estilo del place holder*/
     color: #ccc;
 }
 
 .input-search {
     padding: 10px;
     padding-left: 30px;
-    /* border: none; */
+    border: none;
     background-color: #fff;
     border-radius: 8px;
     margin: 10px;
     background-image: url('../img/searchicon.png');
     background-repeat: no-repeat;
     background-position: 5px;
+    outline: none;
 }
-
+.input-search:focus{
+    border:none;
+}
 textarea {
     resize: none;
 }

@@ -11,8 +11,9 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 450px;
+    width: 450px; 
 }
+/*Cuando al padre que tiene nuestros elementos, le aplicamos display flex*/
 
 .buttons {
     align-self: flex-start;
@@ -30,6 +31,7 @@
     padding: 2px;
     cursor: pointer;
 }
+/*Con google devtools tenemos opcion de modificar el margin directamente desde la opcion d */
 
 .google-btn:hover {
     opacity: 0.75;
@@ -44,7 +46,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* podemos crear un fondo para la imagen que vamos a colocar , en este caso seria el fondo de la letra g antras.*/
 .google-btn picture img {
     width: 75%;
 }
@@ -59,13 +61,16 @@
     color: #bbb;
     background-color: #eee;
     border: none;
-    width: 40px;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.twitter-btn picture img{
+    width: 35px;
+    height: 35px;
+}
 .twitter-btn:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    opacity: .75;
 }
 
 .separator {
@@ -75,7 +80,7 @@
 }
 
 .separator hr {
-    flex-grow: 1;
+    flex-grow: 1; /*Con flex-grow podemos al agregarle el numero uno y se expanderan las lineas del hr*/
     border: none;
     border-top: 1px solid #ccc;
 }
@@ -110,7 +115,7 @@ label span {
 .section-inputs label input {
     width: 80%;
     background-color: #f3f3f4;
-    border: none;
+    border: 3px solid white;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
@@ -124,17 +129,17 @@ label input {
     border-radius: 10px;
     outline: none;
     font-size: 14pt;
-    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    transition: background-color 0.3s, border 0.3s, box-shadow 0.3s;
 }
 
 label input:hover {
     background-color: white;
-    border: solid 1px #f3f3f4;
+    border: solid 1px #ff96d6;
     box-shadow: 0 0 4px #eb50ff4f;
 }
 label input:focus {
-    background-color: white;
-    border: solid 1px #f3f3f4;
+    background-color: #fde8f0;
+    border: solid 1px #ff96d6;
     box-shadow: 0 0 4px #eb50ff4f;
 }
 
@@ -143,7 +148,7 @@ label input:focus {
     flex-direction: row;
 }
 
-.checkbox-label input[type="checkbox"] {
+.checkbox-label input[type="checkbox"] { /*Seleccion por atributo*/
     width: 20px;
 }
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="headerlogin">
+            <span class="start">START FOR FREE</span>
+            <h1>Create new account<span class="dot">.</span></h1>
+            <!---->
+            <span class="loginin">Already A Member? <a href="https://www.google.com/?hl=es" class="createaccount">Log in</a></span>
+        </div>
+            <form action="/" method="" class="bodylogin" tabindex="1">
+                <div class="f-l-name">
+                    <input type="text" id="first-name" name="fname" placeholder="First Name" minlength="4" maxlength="10">
+                    <!---->
+                    <input type="text" id="last-name" 
+                    name="lname" placeholder="Last name"
+                    minlength="4" maxlength="10">
+                </div>
+                <!---->
+                <input type="email" name="email" id="email" placeholder="Email">
+                <!---->
+                <input type="password" name="pass" id="pass" placeholder="Password">
+                <!---->
+                <div class="agree">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Acepto terminos y condiciones</label>
+                </div>
+                <!--Buttons-->
+                <div class="buttons">
+                    <button type="submit" class="change">Change method</button>
+                    <button type="submit" class="create">Create account</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>

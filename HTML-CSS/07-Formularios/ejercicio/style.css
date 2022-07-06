@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&display=swap');
+:root{
+    --background:#161717;
+    --input-color: #212121;
+    --hover-input: #454045;
+    --text-color: #fff9fc;
+    --button-create: #EF79A7;
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #272a38;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-width: 470px;
+    height: 100vh;
+    background-color: var(--background);
+}
+/*Header*/
+.headerlogin{
+    width: 360px;
+    height: 200px;
+}
+.headerlogin .start{
+    font-family: var(--font1);
+    font-size: 16px;
+    color: var(--text-color)
+}
+.headerlogin h1{
+    font-family: var(--font2);
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+.headerlogin h1 .dot{
+    font-size: 65px;
+    color: var(--button-create);
+}
+.headerlogin .loginin{
+    color: var(--text-color);
+    font-family: var(--font1);
+    position: relative;
+    
+}
+.headerlogin .loginin a{
+    color: var(--button-create);
+    text-decoration: none;
+}
+/*body*/
+.bodylogin{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.bodylogin input{
+    height: 55px;
+    width: 100%;
+    background-color: var(--input-color);
+    border:none;
+    border-radius: 10px;
+    padding-left: 10px;
+    transition-duration:.7s;
+    color: var(--text-color);
+    font-family: var(--font1);
+}
+.bodylogin input:hover{
+    background-color: var(--hover-input);
+}
+.bodylogin input:focus{
+    outline-color: var(--button-create);
+    box-shadow: -2px -3px 18px -11px var(--button-create);
+}
+.bodylogin input::placeholder{
+    font-family: var(--font1);
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    padding: 4px 8px;
+}
+.bodylogin .f-l-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.bodylogin .f-l-name input{
+    width: 192px;
+    background-image: url(img/contact-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: 150px 19px;
+    background-size: 17px;
+}
+.bodylogin .f-l-name input#last-name{
+    margin-left: 5px;
+}
+.bodylogin .f-l-name input::placeholder{
+    font-family: var(--font1);
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    padding: 4px 8px;
+}
+.bodylogin input[type="email"]{
+    background-image: url(img/email-mail-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 337px 20px;
+}
+.bodylogin input[type="password"]{
+    background-image: url(img/password-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 333px 16px;
+}
+.bodylogin .agree{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15px;
+}
+.bodylogin .agree label{
+    color: var(--text-color);
+    font-family: var(--font1);
+    font-size: 10px;
+}
+.bodylogin .agree input{
+    width: 13px;
+}
+.bodylogin .agree input:focus{
+    box-shadow: none;
+}
+.bodylogin .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.bodylogin .buttons button{
+    width: 97%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font2);
+    font-size: 13px;
+    margin: 0 auto;
+}
+.bodylogin .buttons button:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.bodylogin .buttons button.change{
+    background-color: var(--input-color);
+    color: var(--text-color);
+}
+.bodylogin .buttons button.create{
+    background-color: var(--button-create);
+    color: var(--text-color);
+    margin-left: 7px;
+}
+
+
