@@ -23,7 +23,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 500px;
-    min-width: 470px;
     height: 100vh;
     background-color: var(--background);
 }
@@ -169,5 +168,31 @@ body{
     color: var(--text-color);
     margin-left: 7px;
 }
+/*---- 375*/
+@media only screen and (max-width: 480px){
+    .headerlogin{
+        width: 340px;
+    }
+    .bodylogin .f-l-name{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bodylogin input[type="email"]{
+        background-position: 268px 18px;
+    }
+    .bodylogin input[type="password"]{
+        background-position: 263px 15px;
+    }
+    .bodylogin .f-l-name input {
+        width: 100%;
+    }
+    .bodylogin .f-l-name input#last-name{
+        margin-left: 0;
+    }
+    .bodylogin .f-l-name input{
+        background-position: 268px 20px;
+    }
 
+}
 
