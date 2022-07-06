@@ -24,6 +24,7 @@ body{
     align-items: center;
     width: 500px;
     height: 100vh;
+    min-height: 800px;
     background-color: var(--background);
 }
 /*Header*/
@@ -122,6 +123,7 @@ body{
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: 355px 16px;
+    font-size: 17px;
 }
 .bodylogin .agree{
     width: 100%;
