@@ -57,12 +57,11 @@ body{
 }
 /*body*/
 .bodylogin{
-    width: 80%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    margin-top: 20px;
 }
 .bodylogin input{
     height: 55px;
@@ -173,6 +172,9 @@ body{
 @media only screen and (max-width: 480px){
     .headerlogin{
         width: 340px;
+    }
+    .bodylogin{
+        width: 300px;
     }
     .bodylogin .f-l-name{
         display: flex;
