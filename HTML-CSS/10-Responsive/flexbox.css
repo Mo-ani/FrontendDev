@@ -5,16 +5,16 @@
     padding: 0.5rem;
     display: flex;
     gap: 0.5rem;
-    min-height: 5rem;
-    /* Eje principal */
-    justify-content: space-around;
+    min-height: 5rem; /*Al establecer un minheight le decimos para que se adapten todos los elementos*/
+    /* Eje principal horizontal*/
+    justify-content: space-around; /*El eje principal es el que establecemos en el flex o el que viene por defecto.*/
 
-    /* Eje secundario */
+    /* Eje secundario vertical*/
     align-items: center;
 
     /* flex-direction: column; */
 
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Con esto agregamos todo el responsive para que los elementos se distribuyan a medida que disminuimos el ancho de la pantalla, viene de la palabra envolver*/
 }
 
 .item {
@@ -24,5 +24,8 @@
 }
 
 .item2 {
-    align-self: stretch;
+    align-self: stretch; /*Se usa cuando quiero modificar un unico elemento*/
+    flex-grow: 2; /*Crece el doble*/
 }
+
+/*Con align-content modificamos la posicion de todo.*/

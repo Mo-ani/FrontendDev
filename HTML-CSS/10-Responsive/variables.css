@@ -1,8 +1,8 @@
-:root {
+:root { /*Con root podemos crear variables que podemos usar mas adelante permitiendonos almacenar tamaños, colores, fuentes*/
     --color-principal: rgb(195, 0, 255);
-    --ancho-principal: 350px;
+    --ancho-principal: 350px; /*Tener en cuenta que la variable se inicializa con --*/
 }
-
+/*Las variables me permiten modificar valores para diferentes elementos a la vez sin necesidad de modificar uno en uno, solo modificamos la variable y todo cambia.*/
 .titulo {
     color: var(--color-principal);
 }

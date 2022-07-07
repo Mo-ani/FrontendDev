@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+:root{
+    --purple-color: #262254;
+    --purple-mid: #543884;
+    --purple-light: #715799;
+    --red-color: #A13670;
+    --red-light: #EC4176;
+    --btn-font: 'Secular One', sans-serif;;
+    --white: antiquewhite;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+.contenedor{
+    min-height: 100vh;
+    background: linear-gradient(to top, var(--purple-color), var(--purple-mid));
+    display: flex;
+    min-width: 200px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 15rem;
+    background: linear-gradient(to top, var(--purple-color)10%, var(--red-color));
+}
+
+.btn{
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    background: linear-gradient(to left, var(--red-light),#fa6fbb);
+    color: var(--white);
+    font-family: var(--btn-font);
+    font-size: 1.5rem;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 13px 41px 4px #ef518b;
+    background: linear-gradient(to left, #f84589, #ff87b5);
+    color: aliceblue;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.right p{
+    font-family: var(--btn-font);
+    font-size: 3rem;
+    color: var(--white);
+}
+
+@media screen and (max-width:640px){
+    html{
+        font-size: 10px;
+    }
+    .contenedor{
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width:340px){
+    html{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:260px){
+    .left{
+        width: 100%;
+    }
+}

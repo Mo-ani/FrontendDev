@@ -8,14 +8,23 @@ p {
     font-size: 2rem;
 }
 
-/* @media all and (max-width: 576px) { */
+/*
+Por defector el media se aplica a todos los dispositivos en este caso con all
+Screen: Pantalla, se usa mas para paginas
+print: Impresora, cuando damos crtl + p
+*/
+
+/* @media all and (max-width: 576px) { <-- le estoy diciendo que todo valor menor a 576px tome estos valores*/
 /* @media (max-width: 576px) {
     h1 {
         color: blue;
     }
 } */
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {/*Aqui se aplica todos los valores meyores a 576*/
+    html{
+        font-size: 24px;
+    }
     h1 {
         color: green;
     }
@@ -26,15 +35,17 @@ p {
         color: blue;
     }
 }
-
+/*Con orientacion ladnscape es para dispositivos de forma horizontal y podemos anidar con el and*/
 @media (orientation: landscape) and (min-height: 400px) {
     p {
         color: brown;
     }
 }
-
+/*En este caso si se cumple la una o la otra se aplicara es como un or*/
 @media (min-height: 300px), (min-width: 1100px) {
-    h1 {
+    h1 {/*Se suele utilizar min-height si quiero dar una experiencia de ususario diferente, por si el celular se toma de lado horizontal*/
         color: darksalmon;
     }
 }
+
+/*Cuando se trabaja  mobile first workflow se usa min-width por lo general, pero consiste en hacer el diseño primero en telefonos celulares y luego se aplica en otros.*/

@@ -1,14 +1,19 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
 .escenario {
     border: 1px solid #333;
     padding: 10px;
 }
 
 .escenario-1 {
-    font-size: 32px;
+    font-size: 15px;
 }
 
 .escenario-2 {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .em {
