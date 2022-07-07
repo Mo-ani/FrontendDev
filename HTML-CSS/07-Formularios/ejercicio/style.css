@@ -23,8 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
     background-color: var(--background);
 }
 /*Header*/
