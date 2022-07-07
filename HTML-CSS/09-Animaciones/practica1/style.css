@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.padre{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.hijo{
+    width: 250px;
+    height: 250px;
+}
+
+.padre:hover .hijo{
+    animation: ejercicio 4s linear infinite forwards;
+}
+
+@keyframes ejercicio {
+    0%{
+        background-color: aquamarine;
+        transform: translateX(0%);
+    }
+    25%{
+        transform:translateX(100%) translateY(0%);
+    }
+    50%{
+        transform:translateY(100%) translateX(100%)
+    }
+    75%{
+        transform: translateY(100%) translateX(0%);
+    }
+    100%{
+        background-color: black         ;
+        transform: translateY(0%);
+    }
+}

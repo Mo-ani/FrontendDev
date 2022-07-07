@@ -9,7 +9,7 @@
     height: 50%;
     background-color: beige;
     /* transition: transform 1s ease-in 2s; */
-    animation: traslacion 4s ease-in-out infinite forwards alternate;
+    animation: traslacion 4s cubic-bezier(1, 0, 0.76, 0.64) infinite forwards alternate; /*Aqui especificamos caracteristicas de las propiedades, podremos colocar all para todas las propiedades del elemento o especificicar que queremos. Con forwards se mantiene en el 100% o ultimo frame*/
 }
 
 .padre:hover .hijo {
@@ -18,9 +18,9 @@
     animation-play-state: paused;
 }
 
-@keyframes traslacion {
-    0% {
-        background-color: beige;
+@keyframes traslacion { /*Traslacion es un nombre personalizado*/
+    0% { /*Este seria su estado inicial*/
+        background-color: #992be2;
         transform: translateX(0%) translateY(0%);
     }
     25% {
@@ -37,3 +37,12 @@
         transform: translateX(0%) translateY(0%);
     }
 }
+
+/*Tenemos animacion y transiciones en un elemento, afectamos la posicion o el estilo de un elemento. Tendremos que tener muy en cuentar el eje x y el eje y*/
+
+/*Tendremos una herramienta en el devtools una herramienta para modificar la animacion, con cubic bazer*/
+
+/*podremos asiganrle un delay que es la demora de la transcicion*/
+
+/*Investigar y experimentar para crear animaciones, recordad que el exceso de animaciones puede ser malo*/
+
