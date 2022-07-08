@@ -73,11 +73,9 @@ body{
         width: 100vw;
         flex-direction: row;
         padding: 1rem;
-        position: absolute;
-        bottom: 0;
     }
     .contenedor{
-        min-height: calc(100vh - 52px);
+        min-height: 100vh;
     }   
 }
 @media screen and (max-width:340px){
