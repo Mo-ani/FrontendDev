@@ -75,6 +75,9 @@ body{
         padding: 1rem;
         position: absolute;
         bottom: 0;
+    }
+    .contenedor{
+        min-height: calc(100vh - 52px);
     }   
 }
 @media screen and (max-width:340px){
