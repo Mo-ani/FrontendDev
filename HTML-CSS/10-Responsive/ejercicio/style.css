@@ -68,6 +68,7 @@ body{
     }
     .contenedor{
         flex-direction: column-reverse;
+        height: 80%;
     }
     .left{
         width: 100%;
