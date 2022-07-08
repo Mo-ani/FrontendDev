@@ -68,13 +68,14 @@ body{
     }
     .contenedor{
         flex-direction: column-reverse;
-        height: 80%;
     }
     .left{
-        width: 100%;
+        width: 100vw;
         flex-direction: row;
         padding: 1rem;
-    }
+        position: absolute;
+        bottom: 0;
+    }   
 }
 @media screen and (max-width:340px){
     html{
