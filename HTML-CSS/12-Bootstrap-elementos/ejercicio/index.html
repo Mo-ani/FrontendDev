@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      .da input:focus{
+        border: 1px solid #4BB543;
+        background-color: #beecbb96;
+      }
+      .da textarea:focus{
+        border: 1px solid #4BB543;
+        background-color: #beecbb96;
+      }
+      .container .row .bg-left{
+        background: url(https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-71.jpg?t=st=1657568987~exp=1657569587~hmac=90a315c2347792f48b1ecb14e28dc827e1f7ebc8da73ac8d1dd6576328aa5dc3&w=740);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row p-3 bg-light rounded-3 d-flex justify-content-center gap-5">
+          <div class="col-md-12 bg-left col-lg-6">
+          </div>
+          <div class="col-md-10 col-lg-5 col-sm-12">
+              <div class="container-fluid py-5 mx-auto">
+                  <h1 class="h1 fw-bolder">Este es un <span class="display-4 fw-bolder" data-bs-toggle="tooltip" data-bs-placement="right" title="Podriamos decir que es una tarjeta" style="cursor: pointer;">
+                    Jumbotron
+                  </span></h1>
+                  <p class="fs-5 mt-3 col-lg-9 col-sm-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, ut eius delectus molestiae libero veritatis! Assumenda alias voluptatem adipisci quia error! Labore natus quia minus, maxime facere expedita atque. Laudantium!</p>
+          
+                  <button class="btn btn-success btn-lg col-lg-8 col-sm-8 mt-3" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modal window</button>
+            <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+                      <div class="modal-dialog modal-dialog-centered"">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title display-6" id="staticBackdropLabel">Esto es un <span class="display-5 fw-bolder" style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="right" title="Es como una ventana emergente con alguna info">modal</span></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body font-monospace">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et voluptates rem nihil reiciendis provident dicta voluptatem atque reprehenderit, iure eos nostrum consequuntur dolorem maxime perferendis aliquam, voluptatum harum ipsum.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success " data-bs-dismiss="modal">Entendí!</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!---->
+              </div>
+          </div>
+        </div>
+        <div class="row p-5 bg-light rounded-3">
+          <div class="container-fluid d-flex flex-column flex-lg-row justify-content-around w-100 gap-5">
+            <div class="card col-12 col-sm-6 col-sm-12 col-md-12 col-lg-6">
+              <div class="card-body">
+                <h5 class="card-title mx-2 p-1">Luis Gonzalez</h5>
+                <h6 class="card-subtitle mx-2 mb-2 text-muted p-1">Nombre</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magni, ipsa incidunt velit earum maiores ducimus provident accusamus repellat debitis sed quasi autem eum magnam corrupti unde eos iure modi?</p>
+                <a href="#" class="btn btn-success mx-2">Porfolio</a>
+                <a href="#" class="card-link text-decoration-none">Sobre mi</a>
+              </div>
+              <div class="card-footer">
+                <p class="fw-bolder fs-6 text-center">peterpd3w@gmail.com</p>
+              </div>
+            </div>
+            <div class="card col-12 h-md-75 col-sm-12 col-md-12 col-lg-4">
+              <div class="card-body">
+                <h5 class="card-title mx-2">Mo-ani.com</h5>
+                <h6 class="card-subtitle mx-2 text-muted">Proyecto</h6>
+                <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo dolores provident excepturi porro rerum </p>
+                <div class="d-flex justify-content-center"><a href="#" class="btn btn-success w-50">Ver</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-5 bg-light rounded-3">
+          <div class="container-fluid d-flex flex-column align-items-center">
+            <h1 class="display-5 fw-bolder">Formulario</h1>
+            <blockquote class="blockquote fs-5">
+              <p class="text-center">Puedes escribirnos, para mas info</p>
+            </blockquote>
+            <form action="/" class="da ">
+              <div class="d-flex flex-column flex-sm-row w-100 gap-1">
+                <input class="form-control form-control-md mt-3" type="text" placeholder="Nombre">
+                <input class="form-control form-control-md mt-3" type="tel" name="tel" id="tel" placeholder="Telefono">
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <label for="exampleFormControlTextarea1" class="form-label fs-4 my-3 fw-lighter">Cuentanos sobre ti. 👇</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="button" class="btn btn-success btn-lg col-lg-4 col-sm-8 mt-4">Enviar</button>
+              </div>
+             
+            </form>
+          </div>
+        </div>
+        
+    </div>
+</body>
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
+<script>
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</html>
