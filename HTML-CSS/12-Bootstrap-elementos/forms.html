@@ -16,11 +16,13 @@
     <div class="container pt-4">
       <form action="">
         <div class="mb-3">
-          <label class="form-label" for="nombre">Introduce tu nombre</label>
+          <label
+          class="form-label " 
+          for="nombre">Introduce tu nombre</label>
           <input
             id="nombre"
             type="text"
-            class="form-control"
+            class="form-control form-control-lg"
             placeholder="Tu nombre"
             disabled
           />
@@ -58,11 +60,12 @@
           >
           <input
             type="email"
-            class="form-control form-control-sm"
+            class="form-control-plaintext form-control-lg "
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             value="gorka@gorka.com"
             readonly
+            disabled
           />
           <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
@@ -113,3 +116,7 @@
     crossorigin="anonymous"
   ></script>
 </html>
+<!--La mejor forma para aprender un framework es copiar el codigo de la documentacion e ir practicando, dependiendo de lo que se necesite. 
+
+Value vendria a ser el valor por defecto que estara en el input
+-->

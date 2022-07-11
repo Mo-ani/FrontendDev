@@ -28,7 +28,7 @@
             <option value="2">Dos</option>
             <option value="3">Tres</option>
           </select>
-          <select class="form-select form-select-lg mb-3" disabled>
+          <select class="form-select form-select-lg mb-3">
             <option selected>Elige un número</option>
             <option value="1">Uno</option>
             <option value="2">Dos</option>
@@ -47,7 +47,6 @@
             class="form-check-input"
             id="check"
             checked
-            disabled
           />
           <label for="check" class="form-check-label"
             >Estoy de acuerdo con las condiciones</label
@@ -74,7 +73,6 @@
               name="flexRadioDefault"
               value="Mayor de edad"
               id="radio-mayor"
-              disabled
             />
             <label for="radio-mayor" class="form-check-label"
               >Soy mayor de edad</label
@@ -108,7 +106,7 @@
             class="btn-check"
             name="options-outlined"
             id="danger-outlined"
-            autocomplete="off"
+            autocomplete="on"
           />
           <label class="btn btn-outline-danger" for="danger-outlined"
             >Danger radio</label
@@ -123,3 +121,5 @@
     crossorigin="anonymous"
   ></script>
 </html>
+<!--Colapasar consiste en esconder de la pestaña codigo que ya usaste.-->
+<!--Tener muy en cuenta los name y for, que son los que conectan labels con input y los name, en el caso de checkbox que es el que se conecta con name tambien type-->

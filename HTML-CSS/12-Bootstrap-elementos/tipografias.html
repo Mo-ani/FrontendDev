@@ -38,7 +38,7 @@
       <p class="lead">Vivamus <mark>eleifend</mark> odio magna, at convallis justo consectetur eu.</p>
       <p class="lh-base">
         <del>Morbi posuere, risus a porttitor tempor, sapien sem viverra tellus, non
-        volutpat enim tellus non nunc.</del> Ut imperdiet diam leo, non luctus quam
+        volutpat non nunc.</del> Ut imperdiet diam leo, non luctus quam
         efficitur id. <small>Etiam id est massa.</small> Donec libero risus, varius a massa
         vitae, fringilla aliquam justo. <strong>Donec cursus id elit in fermentum.</strong>
         <em>Suspendisse sodales velit venenatis viverra pulvinar.</em> Donec leo enim,
@@ -49,7 +49,7 @@
         <figcaption class="blockquote-footer">
             Cervantes <cite title="Don Quijote de la Mancha">de Saavedra</cite>
           </figcaption>
-        Nunc lacinia, eros pellentesque interdum tincidunt, lectus felis
+        Nunc lacinia, eros pellentesque <span class="lead">enim tellus</span>  interdum tincidunt, lectus felis
         vulputate mi, pellentesque hendrerit metus metus sed massa. Suspendisse
         potenti. <span class="font-monospace">In consectetur aliquet nisi eu laoreet.</span> Praesent sagittis,
         dolor in mollis ornare, turpis turpis elementum nunc, sit amet gravida
@@ -67,7 +67,7 @@
           </ul>
       </p>
 
-      <p class="w-25 text-nowrap bg-light">Este es un texto muy largo etc etc</p>
+      <p class="w-50 text-nowrap bg-light">Este es un texto muy largo etc etc</p>
 
       <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 
@@ -76,7 +76,7 @@
       <p class="text-capitalize">texto capitalizado</p>
 
 
-      <p class="fs-1 fw-light">fs-1</p>
+      <p class="fs-1 fw-bolder">fs-1</p>
       <p class="fs-2">fs-2</p>
       <p class="fs-3">fs-3</p>
       <p class="fs-4">fs-4</p>
@@ -95,3 +95,9 @@
     crossorigin="anonymous"
   ></script>
 </html>
+
+
+<!--Mala practica: usar texto subrayado en parrafos a menos que sea un link-->
+<!--A medida que el tamaño va disminuyendo disminuye de igual forma el tamaño de la fuente de los h1-->
+<!--Bootstrap se enfoca en el first mobile workflow, que es una excelente pagina.-->
+<!--Los enlaces por accesibilidad siempre se recomienda colocar una linea debajo del enclace de esta forma se puede entender que es un enlace-->

@@ -23,6 +23,7 @@
         <p class="mb-0">Esto es un texto largo</p>
       </div>
       <div class="alert alert-primary d-flex">
+        <!--icono svg-->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -39,17 +40,14 @@
         </svg>
         <div>Esto es una alerta con icono</div>
       </div>
-      <div
-        class="alert alert-info alert-dismissible fade show"
-        id="alerta-eliminar"
-      >
+      <div class="alert alert-info alert-dismissible fade show" id="alerta-eliminar">
         Este es un alert que se puede eliminar
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="alert"
           aria-label="Close"
-        ></button>
+        ></button><!--Se usa un boton para cerrar la alerta-->
       </div>
       <button
         class="btn btn-danger mb-3"
@@ -93,3 +91,16 @@
     }
   </script>
 </html>
+
+<!--https://getbootstrap.com/docs/4.0/utilities/spacing/ espacios que se usan generalmente en bootstrap
+
+alert-link = funciona para que el link se le aplique un estilo similar al de la alerta
+
+Alert heading, titulo de la alerta que se muestra
+
+d = display
+
+Fade show = crear una pequeña animación 
+
+con los id podemos conectar el boton con lo que deseamos cerrar
+-->

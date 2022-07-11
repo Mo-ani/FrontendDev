@@ -20,10 +20,10 @@
           id="rango"
           type="range"
           class="form-range"
-          value="5"
+          value="0" 
           min="0"
           max="10"
-          step="0.1"
+          step="5"
         />
         <div class="input-group mb-4">
           <span class="input-group-text">@</span>
@@ -64,7 +64,7 @@
             aria-label="Text input with checkbox"
           />
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group flex-nowrap mb-3">
           <div class="input-group-text">
             <input
               class="form-check-input mt-0"
@@ -115,7 +115,7 @@
             <li><a class="dropdown-item" href="#">Presearch</a></li>
           </ul>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mt-3">
             <input type="text" class="form-control" id="text-nombre" placeholder="Tu Nombre" />
             <label for="text-nombre">Nombre label</label>
         </div>
@@ -128,3 +128,9 @@
     crossorigin="anonymous"
   ></script>
 </html>
+<!--con value establecemos el valor por defectm, con step establecemos a cuantos paso quieremos que avance nuestro deslizador
+
+Con flex-nowrap siempre se mantedran dos elementos posicionados horizontalmente asi se disminuya la pantalla
+
+como conclusion, siempre es bueno asosciarnos con la documentacion que nos entregan.
+-->
