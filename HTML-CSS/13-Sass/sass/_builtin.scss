@@ -1,54 +1,57 @@
 //// Funciones con cadenas de texto
-@use "sass:string";
-@use "sass:math";
+/// el debug nos pasa por la terminal lo que necesitamos o le estamos pidiendo.
+/// Aqui podemos crear variables, que podremos usar y remplazar esas misma variables.
+
+@use "sass:string"; // accedemos a las funciones de string
+@use "sass:math"; // accedemos a las funciones de math
 @use "sass:list";
 @use "sass:selector";
 @use "sass:color";
 
 @debug "hola";
-@debug string.index("Helvetica Neue", "Neue");
+@debug string.index("Helvetica Neue", "Neue");//hola 11
 
-$string: "Helvetica";
+$string: "Helvetica"; // reasignamos variables
 $newString: string.insert($string, " Bold", 10);
-
+// el debug nos ayuda a verlo en la terminal.
 @debug $newString;
-@debug string.length($newString);
-@debug string.slice($newString, 5, 9);
+@debug string.length($newString); // 14 letras
+@debug string.slice($newString, 5, 9);//slice es rodajar, cortame el newstring de la 5 a la 9
 
 @debug string.to-upper-case("Roboto Mono");
 @debug string.to-lower-case("Roboto Mono");
 
-@debug string.unique-id();
+@debug string.unique-id(); //por si en algun momento queremos crear un id unico.
 
 //// Funciones con números
 
 @debug math.$e;
-@debug math.$pi;
+@debug math.$pi; // calcular radio
 
-@debug math.floor(4.6);
-@debug math.ceil(4.6);
-@debug math.round(4.4);
+@debug math.floor(4.6); //numero abajo
+@debug math.ceil(4.6); //numero arriba
+@debug math.round(4.4); // dependiendo del punto arriba ao abajo
 
-@debug math.clamp(0, 256.36, 10);
+@debug math.clamp(0, 256.36, 10); // evaluar un rango  y colocarlo, me devolvera el minimo y si no me devolvera el maximo. Para calcular anchos o calcular alturas.
 
-@debug math.max(3, 4, 6, 399, 10, 2);
-@debug math.min(3, 4, 6, 399, 10, 2);
+@debug math.max(3, 4, 6, 399, 10, 2); // nos da el maximo, en este caso 399
+@debug math.min(3, 4, 6, 399, 10, 2); // lo contario del max
 
-@debug math.abs(8);
-@debug math.abs(-8);
+@debug math.abs(8); //nos devuelve valor absoluto
+@debug math.abs(-8); // nos devuelve valor absoluto
 
-@debug math.pow(2, 12);
-@debug math.pow(2, math.abs(-23));
+@debug math.pow(2, 12); // la exponenciacion de 2 elevado a la 12
+@debug math.pow(2, math.abs(-23)); // funciones dentro de funciones
 
-@debug math.cos(math.$pi);
-@debug math.sin(math.$pi);
-@debug math.tan(math.$pi);
+@debug math.cos(math.$pi); // coseno
+@debug math.sin(math.$pi); // seno
+@debug math.tan(math.$pi); // tangente
 
 //// Funciones con listas
 $lista1: 10px, 10px, 0px, 15px;
 
 @debug $lista1;
-@debug list.append($lista1, 25px, space);
+@debug list.append($lista1, 25px, space); // modificamos una copia y los separamos por esapcios o commas
 
 $border-custom: solid 1px #ccc;
 @debug list.index($border-custom, 1px); // 2
@@ -57,37 +60,39 @@ $border-custom: solid 1px #ccc;
 // $border-2: [solid, 1px, #ccc];
 // @debug list.is-bracketed($border-2);
 
-@debug list.join($lista1, $border-custom, auto);
+@debug list.join($lista1, $border-custom, auto); // une dos listas
 @debug list.length(list.join($lista1, $border-custom, auto));
-@debug list.separator($border-custom);
+@debug list.separator($border-custom); // nos muestra que separador tiene 
 @debug list.separator(list.join($lista1, $border-custom, auto));
 
 
-@debug list.set-nth($border-custom, 2, 2px);
+@debug list.set-nth($border-custom, 2, 2px); // que nos cambien una posicion de una lista en la posicion por el valor
 
 //// Funciones de selector
 $selector-1: "a";
 $selector-2: ".disabled";
-@debug selector.append($selector-1, $selector-2);
+@debug selector.append($selector-1, $selector-2); //combina dos selectores (a.disabled)
 
 //// Funciones de color
 
 $color: rgb(226, 81, 255);
-@debug color.adjust($color, $red: -50, $alpha: -0.5);
+@debug color.adjust($color, $red: -50, $alpha: -0.5); // creamos un color donde ajustamos el red y el alpha
 $color-2: rgb(176, 81, 255, 0.5);
 
 @debug color.complement($color);
-$color-comp: #6eff51;
-@debug darken($color, 20%);
+$color-comp: #6eff51; // este es el color complementario de color
+@debug darken($color, 20%);// aqui le decimos que porcentaje sera darken o mas oscuro en el color
 $color-dark: #c300ea;
-@debug lighten($color, 20%);
+@debug lighten($color, 20%);// a comparacion del darken este es mas claro.
 $color-light: #f3b7ff;
 
-@debug color.red($color);
-@debug color.green($color);
-@debug color.blue($color);
+@debug color.red($color); //nos dice cuanto color verde hay en color
+@debug color.green($color);//cuanto verde
+@debug color.blue($color);// cuanto azul 
 
-@debug color.hue($color);
+@debug color.hue($color); // en que angulo se encuentra en el circulo de colores
 
 @debug color.invert($color);
-$color-inv: #1dae00;
+$color-inv: #1dae00; // esto nos muestra el inverso de un color, no el complementario si no el invertido.
+
+// todo es cuestion de ir investigando y jugando dependiendo de lo que necesitemos. 

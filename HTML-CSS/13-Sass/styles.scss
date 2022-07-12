@@ -1,11 +1,11 @@
 // Componentes
-@use "sass/componentes";
+@use "sass/componentes" as comp;
 // namespace 
 // $color -> comp.$color
 
 // Mixins
-@use "sass/mixins";
-// $color -> $color
+@use "sass/mixins" as mix;
+// $color -> mix.$color
 
 // Estilos
 @use "sass/estilos";
@@ -17,3 +17,6 @@
 
 // Otros
 @use "sass/builtin";
+
+
+/*En vez del import podemos usar el use, si queremos usar dos variables diferentes, se va a sobreescribir.*/

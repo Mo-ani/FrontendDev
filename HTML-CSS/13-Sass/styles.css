@@ -10,6 +10,7 @@
 }
 
 .btn-2 {
+  /*Se extiende los estilos del boton original.*/
   margin: 0.5rem;
   border-radius: 0.25rem;
 }
@@ -21,7 +22,7 @@ body {
 
 .container {
   width: 100%;
-  background-color: blanchedalmond;
+  background-color: rgb(241, 155, 26);
   min-height: 100vh;
   padding: 0.5rem;
 }
@@ -32,6 +33,7 @@ h1 {
   text-transform: uppercase;
   width: 50rem;
   background-color: #f1f1f1;
+  /*Se usa para incluir un mixin en de estilo de un elemento en el archivo actual*/
 }
 
 p {
@@ -39,6 +41,7 @@ p {
   text-transform: uppercase;
   width: 50rem;
   background-color: #666666;
+  /*Importamos mixins y lo que usemos con use lo usamos con punto*/
 }
 
 .listado {
@@ -54,6 +57,9 @@ p {
 }
 .listado ul li:hover {
   color: white;
+  cursor: pointer;
 }
+
+/*En vez del import podemos usar el use, si queremos usar dos variables diferentes, se va a sobreescribir.*/
 
 /*# sourceMappingURL=styles.css.map */
