@@ -1,5 +1,5 @@
-var variable;
-let variableLet_;
+var variable; //esta en el ambito global igual
+let variableLet_; //es6 let solo esta en el ambito local.
 
 // const constante;
 const constante = "Hola soy una constante";

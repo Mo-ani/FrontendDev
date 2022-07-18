@@ -68,3 +68,50 @@ El script lo podremos crear directamente desde scripts en nuestro archivo JSON c
 
 En javascript podremos comentar con // una sola linea y el multilinea seria /*Hola esto es un comentario*/
 
+## Tipado Javascript
+
+Tipado inferido, quiere decir que nosotros al definir alguna variable, el interprete ya reconoce el tipo de dato dependiendo del tipo que tenga la variable. 
+
+La ventajas son:
+
++ No necesitamos avisarle que tipo de dato estamos trabajando, nos ayuda programar mas rapido. 
+
++ Nos da mas libertad para dirigir nuestro programa dependiendo del tiopo de dato
+
+Desventajas:
+
++ No nos dara ningun error, al asignar otro tipo de dato a una variable, si es demasiado extenso el codigo, tal vez nos traiga algunos errores.
+
+## tipos de datos en javascript
+
+primitivos: 
++ Number (con coma o sin coma)
++ String o cadena de caracteres
++ Boolean (true o false)
++ null (nulo esapcio vacio en memoria)
++ Undefined (No se a definido un valor para una variable)
+
+Estructuras o objetos:
++ Objetos
++ Matriz o array
++ Funciones
++ Listas
++ Mapas
+
+## Variable
+
+Explicandolo de forma que podamos comprenderlo podria ser una vaja donde guardamos datos, para leugo ser usada llamadnola por su nombre.
+
+En realidad lo que hacemos es asignar un valor en memoria, agregandole un nombre.
+
+La diferencia entre variables y constantes es que a las variables le podemos reasignar un valor y a las constantes no, siempre permanecen inmutables.
+
+Hay una convencion que nos dice que a las constantes se les agrega el nombre en mayusculas.
+
+La diferencia radica en que let tiene un ambito local o entre {} y var tiene un ambito global. Es buena practica usar let. No es buena practica usar el mismo nombre para las variables. 
+
+El var lo podremos usar en un caso muy especifico dependiendo de lo que queramos lograr.
+
+## typeOf
+
+Con este operador podremos saber que tipo de dato es una variable o un valor en especifico. 
