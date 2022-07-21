@@ -25,5 +25,3 @@ if (true) {
 } else {
     console.log("no cumple")
 }
-
-
