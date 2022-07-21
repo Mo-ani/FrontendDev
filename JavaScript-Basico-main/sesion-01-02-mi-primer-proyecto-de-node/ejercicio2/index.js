@@ -1,0 +1,1 @@
+const usuario = ['Luis',24,true,new Date(1997,10,7),{titulo: 'El diario de Ana frank', autor: 'Ana Frank',fecha:new Date(1947,5,25),url:'https://www.annefrank.org/'}];
